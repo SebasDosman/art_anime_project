@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Css/Style7.css" />
+    <link
+      rel="shortcut icon"
+      href="../Images/e39eb7217c7b5157d2c9154564d76598-icono-de-carrito-de-compras-rosa.png"
+      type="image/x-icon"
+    />
+    <title>ArtAnime</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="text-center"><b>ArtAnime</b></h1>
+      </div>
+    </header>
+    <nav>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="../Html/Inventario.html">Inventario</a>
+          </li>
+          <li>
+            <a href="../Html/AñadirProducto.html">Añadir Producto</a>
+          </li>
+          <li>
+            <a href="../Html/Login.html">Iniciar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="App" class="row pt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Añadir Nuevo Producto</h4>
+            </div>
+            <form id="product-form" class="card-body">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nombre producto"
+                  class="form-control"
+                />
+                <br />
+                <input
+                  type="text"
+                  placeholder="Precio producto"
+                  class="form-control"
+                />
+                <br />
+                <input
+                  type="text"
+                  placeholder="Link imagen producto"
+                  class="form-control"
+                />
+                <br />
+                <input
+                  type="text"
+                  placeholder="Descripcion producto"
+                  class="form-control"
+                />
+                <br />
+                <input
+                  type="text"
+                  placeholder="Categoria producto"
+                  class="form-control"
+                />
+                <br />
+                <input
+                  type="number"
+                  id="year"
+                  min="1900"
+                  max="2022"
+                  step="1"
+                  value="2022"
+                  class="form-control"
+                />
+                <br />
+                <input
+                  type="text"
+                  placeholder="Descuento producto"
+                  class="form-control"
+                />
+                <br />
+              </div>
+              <a href="../Html/Inventario.html"
+                ><input
+                  type="submit"
+                  value="Guardar producto"
+                  class="btn btn-primary btn-block"
+              /></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footercontainer">
+      <p class="footer">Tienda ArtAnime</p>
+    </div>
+  </body>
+</html>

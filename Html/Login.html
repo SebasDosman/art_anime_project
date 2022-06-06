@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+    />
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link
+      rel="shortcut icon"
+      href="../Images/e39eb7217c7b5157d2c9154564d76598-icono-de-carrito-de-compras-rosa.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../Css/Style6.css"
+      th:href="@{/css/index.css}"
+    />
+    <title>ArtAnime</title>
+  </head>
+
+  <body>
+    <div class="modal-dialog text-center">
+      <div class="col-sm-8 main-section">
+        <div class="modal-content">
+          <div class="col-12 user-img">
+            <img src="../Images/user.png" />
+          </div>
+          <form class="col-12" th:action="@{/login}" method="get">
+            <div class="form-group" id="user-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre de usuario"
+                name="username"
+              />
+            </div>
+            <div class="form-group" id="contrasena-group">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Contraseña"
+                name="password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-sign-in-alt"></i
+              ><a href="../Html/Categorias.html">Ingresar</a>
+            </button>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-sign-in-alt"></i
+              ><a href="../Html/Inventario.html">Administrador</a>
+            </button>
+          </form>
+          <div class="col-12 forgot">
+            <a href="#">Recordar contraseña?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
