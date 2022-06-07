@@ -742,7 +742,6 @@
                   type="button"
                   data-toggle="modal"
                   data-target="#comprarModal"
-                  onclick="pagar1()"
                 >
                   Comprar
                 </button>
@@ -761,7 +760,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="comprarModalLabel">
-                    Compra En Línea
+                    Datos De Envío
                   </h5>
                   <button
                     type="button"
@@ -773,15 +772,32 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Será dirigido a PSE</p>
+                  <input
+                    type="text"
+                    placeholder="País"
+                    class="form-control"
+                  />
+                  <br>
+                  <input
+                    type="text"
+                    placeholder="Ciudad"
+                    class="form-control"
+                  />
+                  <br>
+                  <input
+                    type="text"
+                    placeholder="Dirección"
+                    class="form-control"
+                  />
                 </div>
                 <div class="modal-footer">
                   <button
                     type="button"
                     class="btn btn-secondary"
                     data-dismiss="modal"
+                    onclick="pagar1()"
                   >
-                    Cerrar
+                    Pagar
                   </button>
                 </div>
               </div>
